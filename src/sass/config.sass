@@ -1,0 +1,43 @@
+*
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    padding: 0
+    color: black
+    list-style: none
+    a
+        text-decoration: none
+        color: black
+    // border: 1px solid white
+
+@mixin container()
+    margin: auto
+    width: 1300px
+
+@mixin flex-box($display, $horiz, $verti)
+    display: $display
+    justify-content: $horiz
+    align-items: $verti
+
+
+body
+    margin: 0
+    padding: 0
+    min-height: 100vh
+    background: black
+        
+// @keyframes rodar // Chamando a função e referenciando um nome a ela
+// FROM // Inicio da Animação, pode ser usado FROM ou 0% para iniciar
+// transform: rotate(0) // A rotacao começa com 0
+// }
+// TO // Término da animação, pode ser usado TO ou 100%
+// transform: rotate(360deg) // Termina apos a volta em 360 graus
+
+// animation: rodar 2s linear infinite;
+
+@keyframes rodar
+    0% 
+        transform: rotate(0) 
+    
+    100% 
+        transform: rotate(360deg)
+    

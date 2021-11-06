@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: black;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  width: 100%;
+  border-bottom: 0.01em solid #383838;
+}
+header .container-header {
+  margin: auto;
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .container-header div rect {
+  width: 70px;
+  height: 70px;
+  fill: white;
+  stroke: black;
+  stroke-width: 3;
+  opacity: 0.5;
+}
+header .container-header nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .container-header nav ul li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.4px;
+  border-bottom: 2px solid transparent;
+}
+header .container-header nav ul li:hover {
+  border-bottom: 2px solid #8f6ce0;
+}
+header .container-header nav ul li:hover a {
+  color: white;
+}
+header .container-header nav ul li a {
+  color: #6b6969;
+  padding: 30px 12px;
+  font-weight: 500;
+}
+header .container-header nav ul li a:hover {
+  transition: 0.5s;
+}
+header .container-header .header-botao {
+  color: #000000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 2s ease;
+  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 25px;
+  letter-spacing: 1.1px;
+}
+header .container-header .header-botao:hover {
+  background-image: linear-gradient(to right, #e386ff 50%, #9f80e7 50%);
+  transition: 1s ease;
+  background-position: left bottom;
+  color: white;
+}
+
+.inicio {
+  height: 800px;
+  margin: auto;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  background-image: linear-gradient(135deg,var(--colors-gradient));    background-clip: text;      -webkit-text-fill-color: transparent*/
+}
+.inicio .inicio-intro {
+  padding-left: 50px;
+}
+.inicio .inicio-intro span {
+  color: white;
+}
+.inicio .inicio-intro h1 {
+  font-family: "Fruktur", cursive;
+  background-image: linear-gradient(135deg, #e386ff, #e386ff, #9f80e7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0 0 0;
+  font-size: 3.5em;
+}
+.inicio .inicio-intro .inicio-sub-title {
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inicio .inicio-intro p {
+  font-family: Roboto, sans-serif;
+  padding-left: 20px;
+  color: white;
+  margin-bottom: 5px;
+}
+.inicio .inicio-unid .inicio-imagem {
+  width: 800px;
+}
+.inicio .inicio-unid .inicio-btn {
+  padding: 13px 35px;
+  margin: 0 10px;
+  border-radius: 25px;
+}
+.inicio .inicio-unid .btn-portifolio {
+  font-weight: bold;
+  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
+  color: black;
+}
+.inicio .inicio-unid .btn-cv {
+  background: transparent;
+  color: white;
+}
+.inicio .inicio-unid .btn-cv:hover {
+  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
+}
+
+.engrenagem-container {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+.engrenagem-container .engrenagem-imagem {
+  margin-left: 25%;
+  width: 200px;
+  animation: rodar 10s linear infinite;
+}
+.engrenagem-container .engrenagem-texto {
+  text-align: center;
+  letter-spacing: 0.07em;
+  margin-top: 40px;
+}
+.engrenagem-container .engrenagem-texto span {
+  display: block;
+  color: white;
+}
+.engrenagem-container .engrenagem-texto h6 {
+  color: #ffffff88;
+  font-family: "Ubuntu", sans-serif;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=estilos.css.map */

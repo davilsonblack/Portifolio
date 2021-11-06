@@ -1,0 +1,48 @@
+.inicio
+    height: 800px
+    @include container
+    @include flex-box(flex, center, center)
+    .inicio-intro
+        padding-left: 50px
+        span
+            color: white
+        h1
+            font-family: 'Fruktur', cursive
+            background-image: linear-gradient(135deg, $cor-primaria, $cor-gradiente)
+            background-clip: text
+            -webkit-text-fill-color: transparent
+            margin: 10px 0 0 0
+            font-size: 3.5em
+        .inicio-sub-title
+            margin-bottom: 15px
+            letter-spacing: 0.05em
+            background-image: linear-gradient(135deg, $cor-gradiente)
+            background-clip: text
+            -webkit-text-fill-color: transparent
+        p
+            font-family: Roboto, sans-serif
+            padding-left: 20px
+            color: white
+            margin-bottom: 5px
+    .inicio-unid
+        .inicio-imagem
+            width: 800px
+        .inicio-btn
+            padding: 13px 35px
+            margin: 0 10px
+            border-radius: 25px
+            
+        .btn-portifolio
+            font-weight: bold
+            background-image: linear-gradient(135deg, $cor-gradiente)
+            color: black
+        .btn-cv
+            background: transparent
+            color: white
+            &:hover 
+                background-image: linear-gradient(135deg, $cor-gradiente)
+            
+
+    /*
+        background-image: linear-gradient(135deg,var(--colors-gradient));    background-clip: text;      -webkit-text-fill-color: transparent*/
+    
