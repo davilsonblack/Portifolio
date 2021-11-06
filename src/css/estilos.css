@@ -13,8 +13,9 @@
 
 body {
   margin: 0;
+  width: 100%;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
   background: black;
 }
 
@@ -101,6 +102,7 @@ header .container-header .header-botao:hover {
 }
 .inicio .inicio-intro {
   padding-left: 50px;
+  margin: 100px 0;
 }
 .inicio .inicio-intro span {
   color: white;
@@ -122,12 +124,30 @@ header .container-header .header-botao:hover {
 }
 .inicio .inicio-intro p {
   font-family: Roboto, sans-serif;
-  padding-left: 20px;
+  padding-left: 20px 0;
   color: white;
   margin-bottom: 5px;
+  word-wrap: break-word;
+}
+.inicio .inicio-intro .inicio-sub-title-intro {
+  margin-bottom: 40px;
+}
+.inicio .inicio-intro .botoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inicio .inicio-intro .botoes .btn-cv {
+  transition: 2s;
+  background: transparent;
+  color: white;
+}
+.inicio .inicio-intro .botoes .btn-cv:hover {
+  transition: all ease 2s;
+  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
 }
 .inicio .inicio-unid .inicio-imagem {
-  width: 800px;
+  width: 750px;
 }
 .inicio .inicio-unid .inicio-btn {
   padding: 13px 35px;
@@ -139,18 +159,10 @@ header .container-header .header-botao:hover {
   background-image: linear-gradient(135deg, #e386ff, #9f80e7);
   color: black;
 }
-.inicio .inicio-unid .btn-cv {
-  background: transparent;
-  color: white;
-}
-.inicio .inicio-unid .btn-cv:hover {
-  background-image: linear-gradient(135deg, #e386ff, #9f80e7);
-}
 
 .engrenagem-container {
   width: 400px;
   margin: auto;
-  margin-bottom: 200px;
 }
 .engrenagem-container .engrenagem-imagem {
   margin-left: 25%;
@@ -171,6 +183,47 @@ header .container-header .header-botao:hover {
   font-family: "Ubuntu", sans-serif;
   margin: 10px 0;
   font-weight: 100;
+}
+
+@media (max-width: 1420px) {
+  .inicio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .inicio .inicio-intro {
+    max-width: 600px;
+  }
+  .engrenagem-container {
+    margin: 200px auto;
+  }
+
+  .container-header {
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  header .container-header {
+    justify-content: flex-start;
+  }
+  header .container-header nav {
+    display: none;
+  }
+  header .container-header .header-botao {
+    display: none;
+  }
+
+  .inicio .inicio-unid-img {
+    display: flex;
+    justify-content: center;
+  }
+  .inicio .inicio-unid-img .inicio-imagem {
+    max-width: 100%;
+  }
+
+  .engrenagem-container .engrenagem-imagem {
+    max-width: 50%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

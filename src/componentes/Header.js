@@ -5,7 +5,7 @@ export default function Header(){
         <header>
             <section className='container-header'>
 
-                <div>
+                <div className='logotipo'>
                     <svg height="80" width='100'>
                         <rect x="15" y="6" rx="20" ry="20"/>
                     </svg>
