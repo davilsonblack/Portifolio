@@ -4,14 +4,53 @@
         flex-wrap: wrap
         width: 100%
         .inicio-intro
-            max-width: 600px 
-            .botoes
+            max-width: 600px
     .engrenagem-container
         margin: 200px auto
     .container-header
         max-width: 100%
 
+@media (max-width: 1060px)
+    .container-body
+        .carrossel-container
+            .cards
+                .card-3
+                    display: none !important
+                .card-4
+                    display: none !important
+            #item-5:checked ~ .cards #song-2,
+            #item-1:checked ~ .cards #song-5,
+            #item-2:checked ~ .cards #song-1
+                transform: translateX(60%) scale(0.8)
+                opacity: 0.85
+                z-index: 0
+            #item-2:checked ~ .cards #song-5,
+            #item-1:checked ~ .cards #song-2,
+            #item-5:checked ~ .cards #song-1
+                transform: translateX(-60%) scale(0.8)
+                opacity: 0.85
+                z-index: 0
+
+
 @media (max-width: 700px)
+    .container-body
+        .carrossel-container
+            .cards
+                .card
+                    .card-title
+                        p, h1 
+            #item-5:checked ~ .cards #song-2,
+            #item-1:checked ~ .cards #song-5,
+            #item-2:checked ~ .cards #song-1
+                transform: translateX(30%) scale(0.8)
+                opacity: 0.85
+                z-index: 0
+            #item-2:checked ~ .cards #song-5,
+            #item-1:checked ~ .cards #song-2,
+            #item-5:checked ~ .cards #song-1
+                transform: translateX(-30%) scale(0.8)
+                opacity: 0.85
+                z-index: 0
     header
         .container-header
             justify-content: flex-start
@@ -21,12 +60,79 @@
                 display: none
 
     .inicio
+        .inicio-intro
+            h1
+                font-size: 2.5em
+            p
+                font-size: 0.90em
+            span
+                font-size: 0.90em
+            padding: 0 10%
         .inicio-unid-img
             display: flex
             justify-content: center
-            .inicio-imagem
-                max-width: 100%
+            
+
     .engrenagem-container
         .engrenagem-imagem
             max-width: 50%
-    
+
+@media (max-width: 760px)
+    .inicio
+        display: block
+        .inicio-unid-img
+            max-width: 95%
+            margin: auto
+            .inicio-imagem
+                background: url('../img/mini-img.png')
+                background-repeat: no-repeat
+                background-size: contain
+                width: 100%
+
+@media (max-width: 466px)
+    .inicio
+        .inicio-intro
+            .inicio-btn
+                border-radius: 10px
+                font-size: 0.90em
+                padding: 13px 20px
+    .inicio
+        .inicio-intro
+            .desktop-title
+                display: none
+            .mobile-title
+                display: block
+                font-size: 3.5em
+
+@media (max-width: 460px)
+    .inicio
+        .inicio-intro
+            .inicio-btn
+                border-radius: 10px
+                font-size: 0.90em
+                padding: 13px 20px
+                margin: 0
+    .container-body
+        margin: 0 !important
+        .carrossel-container
+            .cards
+                .card
+                    min-width: 90%
+                    max-height: 90%
+                    .card-title
+
+
+
+@media (max-width: 425px)
+    br
+        display: none
+    body
+        .box
+            margin: 0 10px
+            min-width: 80% !important
+            .box-input
+                margin: 10% 0
+            .box-date
+                .box-date-input
+                    display: block
+                    margin: 5px 0 !important

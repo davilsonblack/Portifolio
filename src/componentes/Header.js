@@ -1,14 +1,13 @@
 import React from 'react'
+import Logo from '../img/ds-logo.png'
+import EmConstrucao from './EmConstrucao'
 
 export default function Header(){
     return(
         <header>
             <section className='container-header'>
-
                 <div className='logotipo'>
-                    <svg height="80" width='100'>
-                        <rect x="15" y="6" rx="20" ry="20"/>
-                    </svg>
+                    <img src={Logo} alt='logo' className='logotipo-logo'/>
                 </div>
 
                 <nav>

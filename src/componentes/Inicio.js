@@ -6,7 +6,8 @@ export default function Inicio(){
         <section className='inicio'>
             <div className='inicio-unid inicio-intro'>
                 <span>Olá, meu nome é</span>
-                <h1>Davi Silva Ferreira</h1>
+                <h1 className='desktop-title'>Davi Silva Ferreira</h1>
+                <h1 className='mobile-title'>Davi Silva</h1>
                 <p className='inicio-sub-title'>Front-end developer and future Full-stack</p>
                 <p className='inicio-sub-title-intro'>Eu sou um desenvolvedor front-end, especializado na construção e design de experiências digitais. Atualmente, eu estou em busca de uma oportunidade no mercado de trabalho.</p>
                 <section className='botoes mt-4'>
@@ -15,7 +16,7 @@ export default function Inicio(){
                 </section>
             </div>
             <div className='inicio-unid inicio-unid-img'>
-                <img src={Img} alt="inicio-imagem" className='inicio-imagem'></img>
+                <div className='inicio-imagem'></div>
             </div>
         </section>
     )
